@@ -21,6 +21,7 @@ class MyEventHandler(PatternMatchingEventHandler):
     def on_modified(self, event):
         super(MyEventHandler, self).on_modified(event)
         logging.info("File %s was just modified" %event.src_path)
+        # Add you code/function here
 
 def main(file_path=None):
     logging.basicConfig(level=logging.INFO,
@@ -46,6 +47,6 @@ if __name__ == '__main__':
         path = sys.argv[1]
         main(file_path = path.strip())
     else:
-        file_path = 'C:\\Users\\Ghostman\\Downloads\\_PROJECT\\Rakesh\\test.log'
+        file_path = 'C:\\Users\\Ghostman\\Downloads\\_PROJECT\\Rakesh\\access.log'
         main(file_path)
         #sys.exit(1)
