@@ -1,4 +1,4 @@
-# server-log-file-analysis
+# Server log file analysis
 Intrusion detection through log file
 
 ## access.log
